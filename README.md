@@ -36,14 +36,14 @@ Run both versions to compare execution times:
 ./v2_stdio large_source.bin dest2.bin
 
 To profile the system calls:
-strace -c ./v1_lowlevel large_source.bin dest1.bin, 
- strace -c ./v2_stdio large_source.bin dest2.bin
+strace -c ./v1_lowlevel large_source.bin dest1.bin
+strace -c ./v2_stdio large_source.bin dest2.bin
 
 ### 3. Prime Number Counter (primes.c)
 Executes the 16-thread prime counter.
 ./primes
 
-### 4. Concurrent Keyword Search (search.c)
+### 4. Concurrent Keyword Search (`search.c`)
 Requires a target keyword, an output file name, multiple text files to search, and the number of threads.
 Format: ./search <keyword> <output_file> <file1> <file2> ... <thread_count>
 
