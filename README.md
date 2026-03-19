@@ -45,7 +45,7 @@ Executes the 16-thread prime counter.
 
 ### 4. Concurrent Keyword Search (search.c)
 Requires a target keyword, an output file name, multiple text files to search, and the number of threads.
-Format: ./search <keyword> <output_file> <file1> <file2> ... <thread_count>
+Format: ./search "Cat" result.txt log1.txt log2.txt log3.txt log4.txt 4
 
 Example (using 4 threads):
 ./search "error" results.txt log1.txt log2.txt log3.txt 4
