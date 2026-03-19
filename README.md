@@ -43,7 +43,7 @@ To profile the system calls:
 * Executes the 16-thread prime counter.
 * ./primes
 
-### 4. Concurrent Keyword Search (`search.c`)
+### 4. Concurrent Keyword Search (search.c)
 * Requires a target keyword, an output file name, multiple text files to search, and the number of threads.
 * Format: ./search <keyword> <output_file> <file1> <file2> ... <thread_count>
 
