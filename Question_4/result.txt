@@ -1,0 +1,4 @@
+File: log3.txt - Occurrences: 1
+File: log4.txt - Occurrences: 0
+File: log1.txt - Occurrences: 1
+File: log2.txt - Occurrences: 0
