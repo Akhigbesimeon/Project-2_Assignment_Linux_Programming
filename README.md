@@ -1,7 +1,5 @@
 # Project-2_Assignment_Linux_Programming
 
-# Operating Systems and Multithreading Project
-
 This repository contains four C programs demonstrating core operating system concepts, including inter-process communication (IPC), system call tracing, low-level versus standard file I/O, and multithreaded synchronization using POSIX threads.
 
 ## Project Structure
