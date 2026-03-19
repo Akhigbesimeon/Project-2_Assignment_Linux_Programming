@@ -12,11 +12,11 @@ This repository contains four C programs demonstrating core operating system con
 
 ## Compilation Instructions
 
-gcc -Wall -o pipeline pipeline.c
-gcc -Wall -o v1_lowlevel v1_lowlevel.c
-gcc -Wall -o v2_stdio v2_stdio.c
-gcc -Wall -pthread -o primes primes.c
-gcc -Wall -pthread -o search search.c
+* gcc -Wall -o pipeline pipeline.c
+* gcc -Wall -o v1_lowlevel v1_lowlevel.c
+* gcc -Wall -o v2_stdio v2_stdio.c
+* gcc -Wall -pthread -o primes primes.c
+* gcc -Wall -pthread -o search search.c
 
 ## Execution and Testing
 
@@ -25,19 +25,19 @@ Executes the pipeline and captures the output to output.txt.
 ./pipeline
 
 To trace the system calls, use strace:
-strace -f -e trace=process,pipe,file,read,write ./pipeline
+* strace -f -e trace=process,pipe,file,read,write ./pipeline
 
 ### 2. Large File Copy Utility
 Before running, generate a 100MB dummy file for testing:
-dd if=/dev/urandom of=large_source.bin bs=1M count=100
+* dd if=/dev/urandom of=large_source.bin bs=1M count=100
 
 Run both versions to compare execution times:
-./v1_lowlevel large_source.bin dest1.bin
-./v2_stdio large_source.bin dest2.bin
+* ./v1_lowlevel large_source.bin dest1.bin
+* ./v2_stdio large_source.bin dest2.bin
 
 To profile the system calls:
-strace -c ./v1_lowlevel large_source.bin dest1.bin
-strace -c ./v2_stdio large_source.bin dest2.bin
+* strace -c ./v1_lowlevel large_source.bin dest1.bin
+* strace -c ./v2_stdio large_source.bin dest2.bin
 
 ### 3. Prime Number Counter (primes.c)
 Executes the 16-thread prime counter.
