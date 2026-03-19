@@ -40,12 +40,12 @@ To profile the system calls:
 * strace -c ./v2_stdio large_source.bin dest2.bin
 
 ### 3. Prime Number Counter (primes.c)
-Executes the 16-thread prime counter.
-./primes
+* Executes the 16-thread prime counter.
+* ./primes
 
 ### 4. Concurrent Keyword Search (`search.c`)
-Requires a target keyword, an output file name, multiple text files to search, and the number of threads.
-Format: ./search <keyword> <output_file> <file1> <file2> ... <thread_count>
+* Requires a target keyword, an output file name, multiple text files to search, and the number of threads.
+* Format: ./search <keyword> <output_file> <file1> <file2> ... <thread_count>
 
 Example (using 4 threads):
-./search "Cat" results.txt log1.txt log2.txt log3.txt 4
+* ./search "Cat" results.txt log1.txt log2.txt log3.txt 4
